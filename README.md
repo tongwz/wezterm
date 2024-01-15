@@ -1,5 +1,11 @@
 # 我的WezTerm配置
 
+## 我使用的github地址是：
+
+[原作者github](https://github.com/QianSong1/wezterm-config)
+
+我是修改了原作者的一些快捷键，并且加了一些快捷键
+
 ![screenshot](./screenshots/screenshot-1.png)
 
 ## 相关链接
@@ -36,8 +42,9 @@ Windows目录：`C:\Users\Fizz\.config\wezterm`
 
 ```bash
 #快捷键
-Ctrl+shift+c    --复制
-Ctrl+shift+v    --粘贴
+Ctrl+c          --复制
+Ctrl+v          --粘贴
+Shift+Insert    --粘贴
 Ctrl+shift+r    --重命名标签栏
 Ctrl+alt+[\]    --水平拆分窗格，即左右拆分
 Ctrl+alt+[/]    --垂直拆分窗格，即上下拆分
