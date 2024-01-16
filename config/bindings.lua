@@ -14,34 +14,34 @@ end
 
 local keys = {
    -- misc/useful --
-   { key = 'F1', mods = 'NONE', action = 'ActivateCopyMode' },
-   { key = 'F2', mods = 'NONE', action = act.ActivateCommandPalette },
-   { key = 'F3', mods = 'NONE', action = act.ShowLauncher },
-   { key = 'F4', mods = 'NONE', action = act.ShowTabNavigator },
-   { key = 'F11', mods = 'NONE', action = act.ToggleFullScreen },
-   { key = 'F12', mods = 'NONE', action = act.ShowDebugOverlay },
-   { key = 'f', mods = mod.SUPER, action = act.Search({ CaseInSensitiveString = '' }) },
+   { key = 'F1',     mods = 'NONE',        action = 'ActivateCopyMode' },
+   { key = 'F2',     mods = 'NONE',        action = act.ActivateCommandPalette },
+   { key = 'F3',     mods = 'NONE',        action = act.ShowLauncher },
+   { key = 'F4',     mods = 'NONE',        action = act.ShowTabNavigator },
+   { key = 'F11',    mods = 'NONE',        action = act.ToggleFullScreen },
+   { key = 'F12',    mods = 'NONE',        action = act.ShowDebugOverlay },
+   { key = 'f',      mods = mod.SUPER,     action = act.Search({ CaseInSensitiveString = '' }) },
 
    -- copy/paste -- 2024年1月10日09:33:20 本身的快捷键有点儿问题 因此做个改动
-   { key = 'c', mods = 'CTRL', action = act.CopyTo('Clipboard') },
-   { key = 'v', mods = 'CTRL', action = act.PasteFrom('Clipboard') },
-   { key = 'Insert', mods = 'SHIFT', action = act.PasteFrom('Clipboard') },
+   { key = 'c',      mods = 'CTRL',        action = act.CopyTo('Clipboard') },
+   { key = 'v',      mods = 'CTRL',        action = act.PasteFrom('Clipboard') },
+   { key = 'Insert', mods = 'SHIFT',       action = act.PasteFrom('Clipboard') },
 
    -- tabs --
    -- tabs: spawn+close
    -- { key = 't',   mods = mod.SUPER,     action = act.SpawnTab('DefaultDomain') },
-   { key = 't', mods = mod.SUPER_REV, action = act.SpawnTab({ DomainName = 'WSL:Ubuntu' }) },
-   { key = 'w', mods = mod.SUPER_REV, action = act.CloseCurrentTab({ confirm = false }) },
+   { key = 't',      mods = mod.SUPER_REV, action = act.SpawnTab({ DomainName = 'WSL:Ubuntu' }) },
+   { key = 'w',      mods = mod.SUPER_REV, action = act.CloseCurrentTab({ confirm = false }) },
 
    -- tabs: navigation
-   { key = '[', mods = mod.SUPER, action = act.ActivateTabRelative(-1) },
-   { key = ']', mods = mod.SUPER, action = act.ActivateTabRelative(1) },
-   { key = '[', mods = mod.SUPER_REV, action = act.MoveTabRelative(-1) },
-   { key = ']', mods = mod.SUPER_REV, action = act.MoveTabRelative(1) },
+   { key = '[',      mods = mod.SUPER,     action = act.ActivateTabRelative(-1) },
+   { key = ']',      mods = mod.SUPER,     action = act.ActivateTabRelative(1) },
+   { key = '[',      mods = mod.SUPER_REV, action = act.MoveTabRelative(-1) },
+   { key = ']',      mods = mod.SUPER_REV, action = act.MoveTabRelative(1) },
 
    -- window --
    -- spawn windows
-   { key = 'n', mods = mod.SUPER, action = act.SpawnWindow },
+   { key = 'n',      mods = mod.SUPER,     action = act.SpawnWindow },
 
    -- panes --
    -- panes: split panes
@@ -62,26 +62,26 @@ local keys = {
    },
 
    -- panes: zoom+close pane
-   { key = 'z', mods = mod.SUPER_REV, action = act.TogglePaneZoomState },
-   { key = 'w', mods = mod.SUPER, action = act.CloseCurrentPane({ confirm = false }) },
+   { key = 'z',          mods = mod.SUPER_REV, action = act.TogglePaneZoomState },
+   { key = 'w',          mods = mod.SUPER,     action = act.CloseCurrentPane({ confirm = false }) },
 
    -- panes: navigation
-   { key = 'k', mods = mod.SUPER_REV, action = act.ActivatePaneDirection('Up') },
-   { key = 'j', mods = mod.SUPER_REV, action = act.ActivatePaneDirection('Down') },
-   { key = 'h', mods = mod.SUPER_REV, action = act.ActivatePaneDirection('Left') },
-   { key = 'l', mods = mod.SUPER_REV, action = act.ActivatePaneDirection('Right') },
+   { key = 'k',          mods = mod.SUPER_REV, action = act.ActivatePaneDirection('Up') },
+   { key = 'j',          mods = mod.SUPER_REV, action = act.ActivatePaneDirection('Down') },
+   { key = 'h',          mods = mod.SUPER_REV, action = act.ActivatePaneDirection('Left') },
+   { key = 'l',          mods = mod.SUPER_REV, action = act.ActivatePaneDirection('Right') },
 
    -- panes: resize
-   { key = 'UpArrow', mods = mod.SUPER_REV, action = act.AdjustPaneSize({ 'Up', 1 }) },
-   { key = 'DownArrow', mods = mod.SUPER_REV, action = act.AdjustPaneSize({ 'Down', 1 }) },
-   { key = 'LeftArrow', mods = mod.SUPER_REV, action = act.AdjustPaneSize({ 'Left', 1 }) },
+   { key = 'UpArrow',    mods = mod.SUPER_REV, action = act.AdjustPaneSize({ 'Up', 1 }) },
+   { key = 'DownArrow',  mods = mod.SUPER_REV, action = act.AdjustPaneSize({ 'Down', 1 }) },
+   { key = 'LeftArrow',  mods = mod.SUPER_REV, action = act.AdjustPaneSize({ 'Left', 1 }) },
    { key = 'RightArrow', mods = mod.SUPER_REV, action = act.AdjustPaneSize({ 'Right', 1 }) },
 
    -- fonts --
    -- fonts: resize
-   { key = 'UpArrow', mods = mod.SUPER, action = act.IncreaseFontSize },
-   { key = 'DownArrow', mods = mod.SUPER, action = act.DecreaseFontSize },
-   { key = 'r', mods = mod.SUPER, action = act.ResetFontSize },
+   { key = 'UpArrow',    mods = mod.SUPER,     action = act.IncreaseFontSize },
+   { key = 'DownArrow',  mods = mod.SUPER,     action = act.DecreaseFontSize },
+   { key = 'r',          mods = mod.SUPER,     action = act.ResetFontSize },
 
    -- key-tables --
    -- resizes fonts
@@ -124,23 +124,33 @@ local keys = {
 
 local key_tables = {
    resize_font = {
-      { key = 'k', action = act.IncreaseFontSize },
-      { key = 'j', action = act.DecreaseFontSize },
-      { key = 'r', action = act.ResetFontSize },
+      { key = 'k',      action = act.IncreaseFontSize },
+      { key = 'j',      action = act.DecreaseFontSize },
+      { key = 'r',      action = act.ResetFontSize },
       { key = 'Escape', action = 'PopKeyTable' },
-      { key = 'q', action = 'PopKeyTable' },
+      { key = 'q',      action = 'PopKeyTable' },
    },
    resize_pane = {
-      { key = 'k', action = act.AdjustPaneSize({ 'Up', 1 }) },
-      { key = 'j', action = act.AdjustPaneSize({ 'Down', 1 }) },
-      { key = 'h', action = act.AdjustPaneSize({ 'Left', 1 }) },
-      { key = 'l', action = act.AdjustPaneSize({ 'Right', 1 }) },
+      { key = 'k',      action = act.AdjustPaneSize({ 'Up', 1 }) },
+      { key = 'j',      action = act.AdjustPaneSize({ 'Down', 1 }) },
+      { key = 'h',      action = act.AdjustPaneSize({ 'Left', 1 }) },
+      { key = 'l',      action = act.AdjustPaneSize({ 'Right', 1 }) },
       { key = 'Escape', action = 'PopKeyTable' },
-      { key = 'q', action = 'PopKeyTable' },
+      { key = 'q',      action = 'PopKeyTable' },
    },
 }
 
 local mouse_bindings = {
+   {
+      event = { Drag = { streak = 1, button = 'Left' } },
+      mods = 'SUPER',
+      action = wezterm.action.StartWindowDrag,
+   },
+   {
+      event = { Drag = { streak = 1, button = 'Left' } },
+      mods = 'CTRL|SHIFT',
+      action = wezterm.action.StartWindowDrag,
+   },
    -- Ctrl-click will open the link under the mouse cursor
    {
       event = { Up = { streak = 1, button = 'Left' } },
