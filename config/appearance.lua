@@ -1,17 +1,19 @@
 local wezterm = require('wezterm')
 local colors = require('colors.custom')
 -- local fonts = require('config.fonts')
+local gpus = wezterm.gui.enumerate_gpus()
 
 return {
-   term = "xterm-256color",
-   animation_fps = 60,
+   term = 'xterm-256color',
+   animation_fps = 1,
    max_fps = 60,
-   front_end = 'WebGpu',
+   webgpu_preferred_adapter = gpus[1],
+   front_end = 'WebGpu', -- WebGpu OpenGL
    webgpu_power_preference = 'HighPerformance',
 
    -- color scheme
    -- colors = colors,
-   color_scheme = "Gruvbox dark, medium (base16)",
+   color_scheme = 'Gruvbox dark, medium (base16)',
 
    -- background
    window_background_opacity = 0.95,
@@ -30,7 +32,7 @@ return {
 
    -- scrollbar
    enable_scroll_bar = true,
-   min_scroll_bar_height = "3cell",
+   min_scroll_bar_height = '3cell',
    colors = {
       scrollbar_thumb = '#454545',
    },
@@ -44,16 +46,16 @@ return {
    switch_to_last_active_tab_when_closing_tab = true,
 
    -- cursor
-   default_cursor_style = "BlinkingBlock",
-   cursor_blink_ease_in = "Constant",
-   cursor_blink_ease_out = "Constant",
+   default_cursor_style = 'BlinkingBlock',
+   cursor_blink_ease_in = 'Constant',
+   cursor_blink_ease_out = 'Constant',
    cursor_blink_rate = 700,
 
    -- window
-   window_decorations = "INTEGRATED_BUTTONS|RESIZE",
-   integrated_title_button_style = "Windows",
-   integrated_title_button_color = "auto",
-   integrated_title_button_alignment = "Right",
+   window_decorations = 'INTEGRATED_BUTTONS|RESIZE',
+   integrated_title_button_style = 'Windows',
+   integrated_title_button_color = 'auto',
+   integrated_title_button_alignment = 'Right',
    initial_cols = 120,
    initial_rows = 24,
    window_padding = {
