@@ -5,7 +5,7 @@ local gpus = wezterm.gui.enumerate_gpus()
 
 return {
    term = 'xterm-256color',
-   animation_fps = 1,
+   animation_fps = 60,
    max_fps = 60,
    webgpu_preferred_adapter = gpus[1],
    front_end = 'WebGpu', -- WebGpu OpenGL
@@ -17,7 +17,7 @@ return {
 
    -- background
    window_background_opacity = 0.95,
-   win32_system_backdrop = 'Acrylic',
+   -- win32_system_backdrop = 'Acrylic',
    --background = {
    --   {
    --      source = { File = wezterm.config_dir .. '/backdrops/space.jpg' },
