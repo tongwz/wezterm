@@ -141,6 +141,16 @@ local key_tables = {
 }
 
 local mouse_bindings = {
+   {
+      event = { Drag = { streak = 1, button = 'Left' } },
+      mods = 'SUPER',
+      action = wezterm.action.StartWindowDrag,
+   },
+   {
+      event = { Drag = { streak = 1, button = 'Left' } },
+      mods = 'CTRL|SHIFT',
+      action = wezterm.action.StartWindowDrag,
+   },
    -- Ctrl-click will open the link under the mouse cursor
    {
       event = { Up = { streak = 1, button = 'Left' } },
