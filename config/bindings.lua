@@ -38,6 +38,9 @@ local keys = {
    { key = ']',      mods = mod.SUPER,     action = act.ActivateTabRelative(1) },
    { key = '[',      mods = mod.SUPER_REV, action = act.MoveTabRelative(-1) },
    { key = ']',      mods = mod.SUPER_REV, action = act.MoveTabRelative(1) },
+   -- 2024年7月23日15:16:29 tab的左右移动
+   { key = 'h',      mods = mod.SUPER,     action = act.ActivateTabRelative(-1) },
+   { key = 'l',      mods = mod.SUPER,     action = act.ActivateTabRelative(1) },
 
    -- window --
    -- spawn windows
