@@ -15,7 +15,7 @@ if platform.is_win then
       },
       {
          label = '虚拟机',
-         args = { 'ssh', 'tongwz@192.168.56.101', '-p', '22' },
+         args = { 'ssh', 'tongwz@192.168.56.101'},
       },
       { label = 'Cmd', args = { 'cmd' } },
       { label = 'Nushell', args = { 'nu' } },
