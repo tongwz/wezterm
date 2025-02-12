@@ -5,8 +5,8 @@ local act = wezterm.action
 local mod = {}
 
 if platform.is_mac then
-   mod.SUPER = 'SUPER'
-   mod.SUPER_REV = 'SUPER|CTRL'
+   mod.SUPER = 'ALT'
+   mod.SUPER_REV = 'ALT|CTRL'
 elseif platform.is_win then
    mod.SUPER = 'ALT' -- to not conflict with Windows key shortcuts
    mod.SUPER_REV = 'ALT|CTRL'
@@ -112,9 +112,10 @@ local keys = {
       }),
    },
    -- rename tab bar
+   -- mac 中改成ctrl + alt + r 小写 改tab名称
    {
-      key = 'R',
-      mods = 'CTRL|SHIFT',
+      key = 'r',
+      mods = 'CTRL|ALT',
       action = act.PromptInputLine({
          description = 'Enter new name for tab',
          action = wezterm.action_callback(function(window, pane, line)
