@@ -5,6 +5,7 @@ local act = wezterm.action
 local mod = {}
 
 if platform.is_mac then
+   -- SUPER = command键盘
    mod.SUPER = 'ALT'
    mod.SUPER_REV = 'ALT|CTRL'
 elseif platform.is_win then
@@ -25,6 +26,9 @@ local keys = {
    -- copy/paste -- 2024年1月10日09:33:20 本身的快捷键有点儿问题 因此做个改动
    { key = 'c',      mods = 'CTRL',        action = act.CopyTo('Clipboard') },
    { key = 'v',      mods = 'CTRL',        action = act.PasteFrom('Clipboard') },
+   -- Mac本的复制粘贴 cmd + c , cmd + v
+   { key = 'c',      mods = 'SUPER',        action = act.CopyTo('Clipboard') },
+   { key = 'v',      mods = 'SUPER',        action = act.PasteFrom('Clipboard') },
    { key = 'Insert', mods = 'SHIFT',       action = act.PasteFrom('Clipboard') },
 
    -- tabs --
