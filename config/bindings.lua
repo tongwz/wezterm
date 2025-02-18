@@ -44,10 +44,15 @@ local keys = {
    { key = ']',      mods = mod.SUPER_REV, action = act.MoveTabRelative(1) },
    -- 2024年7月23日15:16:29 tab的左右移动
    { key = 'h',      mods = mod.SUPER,     action = act.ActivateTabRelative(-1) },
+   -- 2025年02月17日16:31:04 加入cmd 键的左右移动
+   { key = 'h',      mods = 'SUPER',     action = act.ActivateTabRelative(-1) },
    -- LeftArrow 是左侧方向键
    { key = 'LeftArrow',   mods = mod.SUPER,     action = act.ActivateTabRelative(-1) },
+
    { key = 'l',      mods = mod.SUPER,     action = act.ActivateTabRelative(1) },
-    -- RightArrow 是右侧方向键
+   -- 2025年02月17日16:31:13 加入cmd 键的左右移动
+   { key = 'l',      mods = 'SUPER',     action = act.ActivateTabRelative(1) },
+   -- RightArrow 是右侧方向键
    { key = 'RightArrow',  mods = mod.SUPER,     action = act.ActivateTabRelative(1) },
 
    -- window --

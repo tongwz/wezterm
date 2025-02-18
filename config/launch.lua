@@ -26,6 +26,7 @@ elseif platform.is_mac then
         { label = 'Bash', args = { 'bash' } },
         { label = 'Fish', args = { '/opt/homebrew/bin/fish' } },
         { label = '测试服_47.96.131.52', args = { 'ssh', 'root@47.96.131.52' } },
+        { label = 'dev_114.55.64.104', args = { 'ssh', 'root@114.55.64.104' } },
     }
 end
 
