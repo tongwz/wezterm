@@ -26,8 +26,11 @@ elseif platform.is_mac then
     options.launch_menu = {
         { label = 'Bash', args = { 'bash' } },
         { label = 'Fish', args = { '/opt/homebrew/bin/fish' } },
-        { label = 'testHost', args = { 'ssh', 'root@47.96.131.52' } },
+        { label = 'testHost1', args = { 'ssh', 'root@120.26.121.166' } },
+        { label = 'testHost2', args = { 'ssh', 'root@120.26.121.89' } },
+        { label = 'testSync', args = { 'ssh', 'root@114.55.64.104' } },
         { label = 'devNow0325', args = { 'ssh', 'root@101.37.29.111' } },
+        { label = 'rabbitmq', args = { 'ssh', 'root@47.111.137.185' } },
     }
 end
 
