@@ -54,6 +54,13 @@ return {
             username = "root",
             ssh_option = {},
         },
+        {
+            multiplexing = 'None',
+            name = "Pro-47.97.8.150",
+            remote_address = "47.97.8.150:22",
+            username = "root",
+            ssh_option = {},
+        },
     },
 
     -- ref: https://wezfurlong.org/wezterm/multiplexing.html#unix-domains
