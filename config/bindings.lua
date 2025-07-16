@@ -75,7 +75,12 @@ local keys = {
     {
         key = [[-]],
         mods = mod.SUPER_REV,
-        action = act.CloseCurrentPane({ confirm = true }),
+        action = act.CloseCurrentTab({ confirm = false }),
+    },
+    {
+        key = [[-]],
+        mods = mod.SUPER,
+        action = act.CloseCurrentTab({ confirm = false }),
     },
 
     -- panes: zoom+close pane
