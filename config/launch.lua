@@ -11,7 +11,7 @@ if platform.is_win then
       { label = 'PowerShell', args = { 'powershell' } },
       {
          label = 'Git Bash',
-         args = { 'D:\\software\\GIT\\Git\\bin\\bash.exe' },
+         args = { 'E:\\software\\GIT\\Git\\bin\\bash.exe' },
       },
       {
          label = '虚拟机',
