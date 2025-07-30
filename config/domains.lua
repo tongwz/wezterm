@@ -61,6 +61,13 @@ return {
             username = "root",
             ssh_option = {},
         },
+        {
+            multiplexing = 'None',
+            name = "47.99.73.115",
+            remote_address = "47.99.73.115:22",
+            username = "root",
+            ssh_option = {},
+        },
     },
 
     -- ref: https://wezfurlong.org/wezterm/multiplexing.html#unix-domains
