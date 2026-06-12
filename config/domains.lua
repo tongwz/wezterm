@@ -3,6 +3,13 @@ return {
     ssh_domains = {
         {
             multiplexing = 'None',
+            name = "JumpServer",
+            remote_address = "172.16.32.17:2222",
+            username = "tongweizhen",
+            ssh_option = {},
+        },
+        {
+            multiplexing = 'None',
             name = "DevNow0325",
             remote_address = "101.37.29.111:22",
             username = "root",
